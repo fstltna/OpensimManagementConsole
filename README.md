@@ -1,6 +1,6 @@
-# Opensim Management Console (1.0.0)
+# Opensim Management Console (1.1.0)
 Allows you to manage your Opensim server with a text based GUI - 
-Official support sites: [Official Github Repo](https://github.com/fstltna/OpensimManagementConsole) - [Official Forum](https://opensimcity.org/index.php/forum/server-software)
+Official support sites: [Official Github Repo](https://github.com/fstltna/OpensimManagementConsole) - [Official Forum](https://opensimcity.gameplayer.club/index.php/opensimforum/our-opensim-tools)
 
 ---
 

@@ -7,14 +7,14 @@ use Term::ReadKey;
 use Term::ANSIScreen qw(cls);
 
 my $FileEditor = "/bin/nano";
-my $InitDName = "/etc/init.d/opensim";
-my $OPENSIMDIR = "/root/opensim";
+my $InitDName = "/home/osowner/bin/opensim";
+my $OPENSIMDIR = "/home/osowner/opensim";
 
 ###################################################
 # No changes below here
 ###################################################
 
-my $MMC_ver = "1.0.0";
+my $MMC_ver = "1.1.0";
 my $ServerStatus = "foo";
 
 if ($ENV{'EDITOR'})
@@ -43,7 +43,7 @@ my $menuselection = "";
 
 sub CheckServerStatus
 {
-	my $running=`ps ax|grep OpenSim.exe|grep -v grep`;
+	my $running=`ps ax|grep dotnet|grep -v grep`;
 	if ($running ne "")
 	{
 		$ServerStatus = "Running";
@@ -133,7 +133,7 @@ while (-1)
 	elsif ($menuselection eq "9")
 	{
 		# Run a backup
-		system("/root/OpensimBackup/opensimbackup.pl");
+		system("/home/osowner/OpensimBackup/opensimbackup.pl");
 	}
 }
 
