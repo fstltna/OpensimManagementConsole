@@ -14,7 +14,7 @@ my $OPENSIMDIR = "/home/osowner/opensim";
 # No changes below here
 ###################################################
 
-my $MMC_ver = "1.1.0";
+my $MMC_ver = "1.1.1";
 my $ServerStatus = "foo";
 
 if ($ENV{'EDITOR'})
@@ -133,7 +133,7 @@ while (-1)
 	elsif ($menuselection eq "9")
 	{
 		# Run a backup
-		system("/home/osowner/OpensimBackup/opensimbackup.pl");
+		system("/home/osowner/OpensimBackup/opensimbackup.pl -snapshot");
 	}
 }
 
